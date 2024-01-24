@@ -1,0 +1,41 @@
+body {
+    background-color: #000;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 12px;
+    width: 300px;
+}
+
+.sidebar__navigation {
+    background-color: #121212;
+    padding: 16px 0 0 16px;
+}
+
+.logo {
+    padding: 16px 0 0 16px;
+}
+
+.logo img {
+    width: 80px;
+}
+
+.sidebar__navigation ul {
+    margin-top: 20px;
+}
+
+.sidebar__navigation li {
+    padding: 10px 20px;
+}
+
+.sidebar__navigation li a {
+    color: #b2b2b2;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    font-family: "DM Sans", sans-serif;
+}
