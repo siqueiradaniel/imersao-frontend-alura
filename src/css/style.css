@@ -6,36 +6,43 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    bottom: 0;
-    padding: 12px;
     width: 300px;
+    padding: 12px;
 }
 
 .sidebar__navigation {
     background-color: #121212;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.sidebar__navigation .logo {
     padding: 16px 0 0 16px;
 }
 
-.logo {
-    padding: 16px 0 0 16px;
-}
-
-.logo img {
+.sidebar__navigation .logo a img {
     width: 80px;
 }
 
 .sidebar__navigation ul {
     margin-top: 20px;
+    padding: 0 20px 10px 20px;
 }
 
-.sidebar__navigation li {
-    padding: 10px 20px;
+.sidebar__navigation ul li {
+    padding: 10px 0px;
 }
 
-.sidebar__navigation li a {
-    color: #b2b2b2;
+.sidebar__navigation ul a {
+    color: #b3b3b3;
+    list-style: none;
     text-decoration: none;
-    font-weight: 600;
     font-size: 14px;
+    font-weight: 600;
     font-family: "DM Sans", sans-serif;
+}
+
+.sidebar__navigation ul a .fa {
+    margin-right: 10px;
+    font-size: 20px;
 }
