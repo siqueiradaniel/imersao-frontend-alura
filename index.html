@@ -14,7 +14,7 @@
     <!-- Nosso CSS -->
     <link rel="stylesheet" href="src/css/vars.css">
     <link rel="stylesheet" href="src/css/sidebar-footer.css">
-    <link rel="stylesheet" href="src/css/main__content.css">
+    <link rel="stylesheet" href="src/css/main-content.css">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
@@ -22,82 +22,93 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <div class="sidebar">
+        <nav class="sidebar__navigation">
+            <div class="logo">
+                <a href="">
+                    <img src="src/assets/icons/logo-spotify.png" alt="Logo do Spotify">
+                </a>
+            </div>
+            <ul>
+                <li>
+                    <a href="">
+                        <span class="fa fa-home"></span>
+                        <span>Início</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="fa fa-search"></span>
+                        <span>Buscar</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="library">
+            <div class="library__content">
+                <button class="library__button">
+                    <span class="fa fa-book"></span>
+                    <span class="text">Sua biblioteca</span>
+                </button>
+                <span class="fa fa-plus"></span>
+            </div>
+            
+            <section class="section-playlist">
+                <div class="section-playlist__content">
+                    <span class="text title">Crie sua primeira playlist</span>
+                    <span class="text subtitle">É fácil, vamos te ajudar.</span>
+                    <button class="section-playlist__button">
+                        <span>Criar playlist</span>
+                    </button>
+                </div>
+            </section>
+            
+            <div class="library__cookies">
+                <a href="">Cookies</a>
+            </div>
+            
+            <div class="languages">
+                <button class="languages__button">
+                    <span class="fa fa-globe"></span>
+                    <span>Português do Brasil</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
     <main>
         <div class="main-container">
-            <div class="top-search-bar">
+            <nav class="header-navigation">
                 <div class="navigation">
-                    <div class="arrows">
-                        <img src="src/assets/icons/small-left.png" alt="Seta para esquerda">
-                        <img src="src/assets/icons/small-right.png" alt="Seta para direita">
-                    </div>
-                    <div class="input-search">
-                        <span class="fa fa-search"></span>
-                        <input type="text" placeholder="O que você quer ouvir?" />
-                    </div>
+                    <button class="arrow-left">
+                        <img src="src/assets/icons/small-left.png" 
+                        alt="Seta para esquerda">
+                    </button>
+                    <button class="arrow-right">
+                        <img src="src/assets/icons/small-right.png" 
+                        alt="Seta para direita">
+                    </button>
                 </div>
-                <div class="subscribe">
+
+                <div class="header-search">
+                    <img src="src/assets/icons/search.png" alt="">
+                    <input id="search-input" type="text" 
+                        placeholder="O que você quer ouvir?" maxlength="800"
+                    />
+                </div>
+                
+                <div class="header-login">
                     <button type="button" class="register">Inscreva-se</button>
                     <button type="button" class="sign-in">Entrar</button>
                 </div>
-            </div>
+            </nav>
             <div class="content">
 
             </div>
         </div>
     </main>
-    <div class="sidebar">
-        <nav class="sidebar__navigation">
-        <div class="logo">
-            <a href="">
-                <img src="src/assets/icons/logo-spotify.png" alt="Logo do Spotify">
-            </a>
-        </div>
-        <ul>
-            <li>
-                <a href="">
-                    <span class="fa fa-home"></span>
-                    <span>Início</span>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <span class="fa fa-search"></span>
-                    <span>Buscar</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
 
-    <div class="library">
-        <div class="library__content">
-            <button class="library__button">
-                <span class="fa fa-book"></span>
-                <span class="text">Sua biblioteca</span>
-            </button>
-            <span class="fa fa-plus"></span>
-        </div>
-        
-        <section class="section-playlist">
-            <div class="section-playlist__content">
-                <span class="text title">Crie sua primeira playlist</span>
-                <span class="text subtitle">É fácil, vamos te ajudar.</span>
-                <button class="section-playlist__button">
-                    <span>Criar playlist</span>
-                </button>
-            </div>
-        </section>
-        
-        <div class="library__cookies">
-            <a href="">Cookies</a>
-        </div>
-        
-        <div class="languages">
-            <button class="languages__button">
-                <span class="fa fa-globe"></span>
-                <span>Português do Brasil</span>
-            </button>
-        </div>
-    </div>
     <footer>
         <div class="footer__text">
             <span class="footer__title">Testar o premium de graça</span>
