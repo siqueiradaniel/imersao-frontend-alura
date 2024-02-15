@@ -1,7 +1,3 @@
-body {
-    background-color: #000;
-}
-
 .sidebar {
     position: fixed;
     top: 0;
@@ -11,7 +7,7 @@ body {
 }
 
 .sidebar__navigation {
-    background-color: #121212;
+    background-color: var(--box-color);
     border-radius: 8px;
     cursor: pointer;
 }
@@ -30,16 +26,15 @@ body {
 }
 
 .sidebar__navigation ul li {
-    padding: 10px 0px;
+    padding: 10px 0;
 }
 
 .sidebar__navigation ul a {
-    color: #b3b3b3;
+    color: var(--font-color);;
     list-style: none;
     text-decoration: none;
     font-size: 14px;
     font-weight: 600;
-    font-family: "DM Sans", sans-serif;
 }
 
 .sidebar__navigation ul a .fa {
@@ -48,11 +43,11 @@ body {
 }
 
 .sidebar__navigation ul a:hover {
-    color: #FFFFFF;
+    color: white;
 }
 
 .library {
-    background-color: #121212;
+    background-color: var(--box-color);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -73,10 +68,8 @@ body {
     display: flex;
     background-color: transparent;
     text-decoration: none;
-    color: #b3b3b3;
     font-size: 1rem;
     font-weight: 700;
-    font-family: 'Montserrat', sans-serif;
     text-align: center;
     padding: 20px 10px;
     border: 0;
@@ -87,17 +80,19 @@ body {
     font-size: 20px;
     margin-right: 10px;
     padding-right: 8px;
+    color: var(--font-color);
 }
 
 .library__button .text {
     font-size: 16px;
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 800;
+    font-weight: 700;
+    color: var(--font-color);
+    font-family: 'Montserrat', sans-serif;
 }
 
 .library__content .fa-plus {
-    color: #b3b3b3;
-    font-size: 16px;
+    color: var(--font-color);
+    font-size: 14px;
     margin: 24px 10px;
 }
 
@@ -107,7 +102,7 @@ body {
     justify-content: space-between;
     gap: 20px;
     background-color: #242424;
-    color: #b3b3b3;
+    color: var(--font-color);
     font-size: 14px;
     font-weight: 600;
     padding: 16px 20px;
@@ -122,8 +117,7 @@ body {
 
 .section-playlist .text {
     padding-bottom: 14px;
-    color: #FFF;
-    font-family: 'DM Sans', sans-serif;
+    color: white;
 }
 
 .section-playlist .title {
@@ -138,7 +132,7 @@ body {
 
 .section-playlist__button {
     background-color: #FFF;
-    color: #000;
+    color: black;
     border-radius: 9999px;
     display: flex;
     justify-content: center;
@@ -148,9 +142,9 @@ body {
     padding: 10px;
     font-weight: 700;
     font-size: .8rem;
-    font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     text-transform: none;
+    cursor: pointer;
 }
 
 .library__cookies {
@@ -158,11 +152,10 @@ body {
 }
 
 .library__cookies a {
-    color: #b3b3b3;
+    color: var(--font-color);
     font-size: 10px;
     font-weight: 500;
     text-decoration: none;
-    font-family: 'DM Sans', sans-serif;
 }
 
 .library__cookies a:hover {
@@ -175,49 +168,48 @@ body {
     border-radius: 9999px;
     padding: 8px;
     margin: 8px;
-    color: #FFF;
+    color: white;
     cursor: pointer;
     align-items: center;
     font-weight: bold;
     width: 170px;
 }
 
-.disclaimer-premium {
+footer {
+    display: flex;
+    justify-content: space-between;
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(to right, #ae2896, #509bf5);
-    padding: 15px 40px;
+    background-image: linear-gradient(to right, #AA138F, #3280DF);
+    color: white;
+}
+
+.footer__text {
     display: flex;
-    justify-content: space-between;
-}
-.disclaimer-premium .text {
-   flex-shrink: 0;
-   font-family: 'DM Sans', sans-serif;
-}
-.disclaimer-premium .disclaimer-premium__title {
-    color: #ffffff;
-    text-transform: uppercase;
-    font-weight: 400;
-    font-size: 12px;
-    margin-bottom: 10px;
+    flex-direction: column;
+    gap: 10px;
+    margin: 8px 0 12px 16px;
 }
 
-.disclaimer-premium .disclaimer-premium__subtitle {
-    color: #ffffff;
+.footer__title {
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 400;
+    text-transform: uppercase;
 }
 
-.disclaimer-premium button {
-    background-color: #ffffff;
-    color: #000000;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 14px 30px;
-    border: 0px;
-    border-radius: 40px;
+.footer__subtitle {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.footer__button {
+    margin: 1rem;
+    border: 0;
+    border-radius: 99999px;
+    padding: .5rem 1rem;
+    font-size: 14px;
+    font-weight: 700;
     cursor: pointer;
-    flex-shrink: 0;
 }
