@@ -25,7 +25,6 @@
 }
 
 .playlist-cards {
-    position: relative;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     column-gap: 12px;
@@ -35,13 +34,11 @@
 }
 
 .playlist-cards .cards {
-    position: absolute;
     width: 220px;
     height: 200px;
     border-radius: 8px;
     overflow: hidden;
     position: relative;
-    padding-bottom: 20px;
 }
 
 .playlist-cards .cards a {
