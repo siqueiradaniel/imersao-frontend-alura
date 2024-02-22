@@ -1,0 +1,94 @@
+{
+    "artists": [
+        {
+            "id": 1,
+            "name": "Beyoncé",
+            "genre": "R&B/Pop",
+            "imgUrl": "https://i.scdn.co/image/ab6761610000e5ebed55e091bcf7b46eb4f2f1d7"
+        },
+        {
+            "id": 2,
+            "name": "Ed Sheeran",
+            "genre": "Pop",
+            "imgUrl": "https://i.scdn.co/image/ab6761610000e5ebc643a0e4e53f1b5c3cfad4b3"
+        },
+        {
+            "id": 3,
+            "name": "Taylor Swift",
+            "genre": "Pop/Country",
+            "imgUrl": "https://i.scdn.co/image/ab6761610000e5eb3923ad13b1e9f76cb8e2ff7a"
+        },
+        {
+            "id": 4,
+            "name": "Drake",
+            "genre": "Hip-Hop/Rap",
+            "imgUrl": "https://i.scdn.co/image/ab6761610000e5eb9f8598cf3a72bf5f1e7b2d0a"
+        },
+        {
+            "id": 5,
+            "name": "Adele",
+            "genre": "Pop/Soul",
+            "imgUrl": "https://i.scdn.co/image/ab6761610000e5ebbc5a7a4ce9ef5bfa26b07df2"
+        },
+        {
+            "id": 6,
+            "name": "Justin Bieber",
+            "genre": "Pop/R&B",
+            "imgUrl": "https://i.scdn.co/image/ab6761610000e5eb2f79024c9c621eb8676fb63f"
+        },
+        {
+            "id": 7,
+            "name": "Coldplay",
+            "genre": "Rock/Alternative",
+            "imgUrl": "https://i.scdn.co/image/ab6761610000e5eb5c971dec1d3624ef41b96da4"
+        },
+        {
+            "id": 8,
+            "name": "Kanye West",
+            "genre": "Hip-Hop/Rap",
+            "imgUrl": "https://i.scdn.co/image/ab6761610000e5eb8fb35c6cfa53b65a3dc12652"
+        },
+        {
+            "id": 9,
+            "name": "Rihanna",
+            "genre": "R&B/Pop",
+            "imgUrl": "https://i.scdn.co/image/ab6761610000e5eb2b998b8b5df4af19a4870e92"
+        },
+        {
+            "id": 10,
+            "name": "Eminem",
+            "genre": "Hip-Hop/Rap",
+            "imgUrl": "https://i.scdn.co/image/ab6761610000e5eb7ec8593f1e05ba1e138f63db"
+        },
+        {
+            "id": 11,
+            "name": "Bruno Mars",
+            "genre": "Pop/R&B",
+            "imgUrl": "https://i.scdn.co/image/ab6761610000e5eba3fc7aa64dd3b71cfc59b8a5"
+        },
+        {
+            "id": 12,
+            "name": "Ariana Grande",
+            "genre": "Pop/R&B",
+            "imgUrl": "https://i.scdn.co/image/ab6761610000e5ebf8d6f8e5d6fa5e4b0b7a6f8b"
+        },
+        {
+            "id": 13,
+            "name": "Lady Gaga",
+            "genre": "Pop/Dance",
+            "imgUrl": "https://i.scdn.co/image/ab6761610000e5eb5ddab165c28c2b8f8d2e0184"
+        },
+        {
+            "id": 14,
+            "name": "The Weeknd",
+            "genre": "R&B/Pop",
+            "imgUrl": "https://i.scdn.co/image/ab6761610000e5eb789b502231c7f831e78e92e0"
+        },
+        {
+            "id": 15,
+            "name": "Imagine Dragons",
+            "genre": "Rock/Alternative",
+            "imgUrl": "https://i.scdn.co/image/ab6761610000e5eb9a9b727333b464be436fcc6d"
+        }
+    ]
+}

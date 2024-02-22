@@ -26,9 +26,9 @@
 
 .playlist-cards {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    column-gap: 12px;
-    row-gap: 32px;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 16px;
     margin-top: 24px;
     overflow: hidden;
 }
@@ -61,6 +61,11 @@
     right: -18.4px;
     bottom: -6px;
     transform: rotate(25deg);
+}
+
+/* Hide element */
+.hidden {
+    display: none;
 }
 
 /* CSS descartável */
