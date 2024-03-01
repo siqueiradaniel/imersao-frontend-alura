@@ -1,28 +1,35 @@
-const search_input = document.getElementById('input-search');
-const result_artist = document.getElementById('result-artist');
-const result_playlist = document.getElementById('section__playlist-cards')
+const resultArtist = document.getElementById("result-artist");
+const playlistContainer = document.getElementById("result-playlist");
+const searchInput = document.getElementById("input-search");
 
-function request_api(search_term) {
-    const url = `http://localhost:3000/artists?name_like=${search_term}`;
-    
-    fetch(url)
-        .then((resp) => resp.json())
-        // .then((result) => display_artists(result));
+function requestApi(searchTerm) {
+  fetch(`http://localhost:3000/artists?name_like=${searchTerm}`)
+    .then((response) => response.json())
+    .then((results) => displayResults(results));
 }
 
-function display_artists(artists) {
-    artists.foreach((artist) => {
+function displayResults(results) {
+  hidePlaylists();
+  const artistImage = document.getElementById("artist-img");
+  const artistName = document.getElementById("artist-name");
 
-    })
+  results.forEach((element) => {
+    artistImage.src = element.urlImg;
+    artistName.innerText = element.name;
+  });
+  resultArtist.classList.remove("hidden");
 }
 
-document.addEventListener('input', function() {
-    const search_term = search_input.value.toLowerCase();
-    if (search_term === '') {
-        result_playlist.classList.add('hidden');
-        result_artist.classList.remove('hidden');
-        return;
-    }
+function hidePlaylists() {
+  playlistContainer.classList.add("hidden");
+}
 
-    request_api(search_term);
-})
+searchInput.addEventListener("input", function () {
+  const searchTerm = searchInput.value.toLowerCase();
+  if (searchTerm === "") {
+    resultArtist.classList.add("hidden");
+    playlistContainer.classList.remove("hidden");
+    return;
+  }
+  requestApi(searchTerm);
+});
